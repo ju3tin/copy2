@@ -6,6 +6,7 @@ import Layout from '../components/Layout';
 import record from '../ethereum/record';
 import web3 from '../ethereum/web3';
 import { Router } from '../routes';
+import Error from 'next/error';
 
   var data = [];
   var pieData = [];

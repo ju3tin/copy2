@@ -24,38 +24,38 @@ export default class MenuBar extends Component {
   render() {
     return (
       <Menu size='large' inverted>
-          <Link route='/'>
+          <Link legacyBehavior route='/'>
               <a className='item'>Home</a>
           </Link>
 
           <Menu.Menu position='right'>
-            <Link route='/dashboard'>
+            <Link legacyBehavior route='/dashboard'>
                 <a className='item'>Dashboard</a>
             </Link>
 
-            <Link route='/list'>
+            <Link legacyBehavior route='/list'>
                 <a className='item'>Records List</a>
             </Link>
 
             <Dropdown item text='Doctor'>
               <Dropdown.Menu>
                 <Dropdown.Item>
-                  <Link route='/'>
+                  <Link legacyBehavior route='/'>
                     <a style={{color:'black'}} onClick={this.onClickedDoctor}>View Profile</a>
                   </Link>
                 </Dropdown.Item>
                 <Dropdown.Item>
-                  <Link route='/edit-doctor'>
+                  <Link legacyBehavior route='/edit-doctor'>
                     <a style={{color:'black'}}>Edit Profile</a>
                   </Link>
                 </Dropdown.Item>
                 <Dropdown.Item>
-                  <Link route='/make-appointment'>
+                  <Link legacyBehavior route='/make-appointment'>
                     <a style={{color:'black'}}>Make Appointment</a>
                   </Link>
                 </Dropdown.Item>
                 <Dropdown.Item>
-                  <Link route='/edit-appointment'>
+                  <Link legacyBehavior route='/edit-appointment'>
                     <a style={{color:'black'}}>Update Appointment</a>
                   </Link>
                 </Dropdown.Item>
@@ -65,22 +65,22 @@ export default class MenuBar extends Component {
             <Dropdown item text='Patient'>
               <Dropdown.Menu>
                 <Dropdown.Item>
-                  <Link route='/'>
+                  <Link legacyBehavior route='/'>
                     <a style={{color:'black'}} onClick={this.onClickedPatient}>View Profile</a>
                   </Link>
                 </Dropdown.Item>
                 <Dropdown.Item>
-                  <Link route='/edit-patient'>
+                  <Link legacyBehavior route='/edit-patient'>
                     <a style={{color:'black'}}>Edit Profile</a>
                   </Link>
                 </Dropdown.Item>
                 <Dropdown.Item>
-                  <Link route='/approve-doctor'>
+                  <Link legacyBehavior route='/approve-doctor'>
                     <a style={{color:'black'}}>Allow Access</a>
                   </Link>
                 </Dropdown.Item>
                 <Dropdown.Item>
-                  <Link route='/revoke-doctor'>
+                  <Link legacyBehavior route='/revoke-doctor'>
                     <a style={{color:'black'}}>Revoke Access</a>
                   </Link>
                 </Dropdown.Item>
@@ -90,12 +90,12 @@ export default class MenuBar extends Component {
             <Dropdown item text='Register'>
               <Dropdown.Menu>
                 <Dropdown.Item>
-                  <Link route='/register-patient'>
+                  <Link legacyBehavior route='/register-patient'>
                     <a style={{color:'black'}}>Patient</a>
                   </Link>
                 </Dropdown.Item>
                 <Dropdown.Item>
-                  <Link route='/register-doctor'>
+                  <Link legacyBehavior route='/register-doctor'>
                     <a style={{color:'black'}}>Doctor</a>
                   </Link>
                 </Dropdown.Item>

@@ -5,6 +5,7 @@ import Layout from '../components/Layout';
 import record from '../ethereum/record';
 import web3 from '../ethereum/web3';
 import { Router } from '../routes';
+import Error from 'next/error';
 
 class RecordsList extends Component {
     state = { 
@@ -22,7 +23,7 @@ class RecordsList extends Component {
             return {
                 header: address,
                 description: (
-                    <Link route={`/record/${address}`}>
+                    <Link legacyBehavior route={`/record/${address}`}>
                         <a>View Record</a>
                     </Link>
                 ),
@@ -42,7 +43,7 @@ class RecordsList extends Component {
     render() {
         return (
             <Layout>
-                <div>
+                <p>
                    
                     <Form onSubmit={this.onSearch}> 
                         <Form.Field>
@@ -56,7 +57,7 @@ class RecordsList extends Component {
                     </Form>
                      <h2>Medical Records List</h2>
                     {this.renderRecords()}
-                </div>
+                </p>
             </Layout>
         );
     }

@@ -51,15 +51,15 @@ class DoctorDetails extends Component {
                         <Grid.Row>
                             <Grid.Column>
                                 <b style={{color:'grey'}}>Full Name</b>
-                                <div>{this.props.name}</div>
+                                <p>{this.props.name}</p>
                             </Grid.Column>
                             <Grid.Column>
                                 <b style={{color:'grey'}}>IC</b>
-                                <div>{this.props.ic}</div>
+                                <p>{this.props.ic}</p>
                             </Grid.Column>
                             <Grid.Column>
                                 <b style={{color:'grey'}}>Gender</b>
-                                <div>{this.props.gender}</div>
+                                <p>{this.props.gender}</p>
                             </Grid.Column>
                         </Grid.Row>
                     </Grid>
@@ -68,11 +68,11 @@ class DoctorDetails extends Component {
                         <Grid.Row>
                             <Grid.Column>
                                 <b style={{color:'grey'}}>Phone</b>
-                                <div>{this.props.phone}</div>
+                                <p>{this.props.phone}</p>
                             </Grid.Column>
                             <Grid.Column>
                                 <b style={{color:'grey'}}>Birthdate</b>
-                                <div>{this.props.dob}</div>
+                                <p>{this.props.dob}</p>
                             </Grid.Column>
                         </Grid.Row>
                     </Grid>
@@ -82,11 +82,11 @@ class DoctorDetails extends Component {
                         <Grid.Row>
                             <Grid.Column>
                                 <b style={{color:'grey'}}>Highest Qualification</b>
-                                <div>{this.props.qualification}</div>
+                                <p>{this.props.qualification}</p>
                             </Grid.Column>
                             <Grid.Column>
                                 <b style={{color:'grey'}}>Major</b>
-                                <div>{this.props.major}</div>
+                                <p>{this.props.major}</p>
                             </Grid.Column>
                         </Grid.Row>
                     </Grid>
@@ -101,9 +101,9 @@ class DoctorDetails extends Component {
     render() {
         return (
             <Layout>
-                <div>
+                <p>
                     {this.renderDisplayNew()}
-                </div>
+                </p>
             </Layout>
         );
     }

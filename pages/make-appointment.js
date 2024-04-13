@@ -3,6 +3,7 @@ import { Divider, Form, Input, Button, Segment, Message, Select } from 'semantic
 import Layout from '../components/Layout';
 import record from '../ethereum/record';
 import web3 from '../ethereum/web3';
+import Error from 'next/error';
 
 const statusOptions = [
     { key: 'p', text: 'Pending', value: 'Pending' },
