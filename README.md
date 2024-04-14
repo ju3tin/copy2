@@ -4,8 +4,8 @@
 
 ## Setup
 1. Download Metamask Extension from chrome
-2. Set your wallet to Rinkeby test network
-3. Get ETH from Rinkeby Faucet
+2. Set your wallet to EVM test network
+3. Get XRP from Ripple Faucet
 
 ## How to Run System
 ```
